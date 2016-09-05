@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1455473610 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment5Solution/main.cpp
+	<iostream>
+	"Queue.h"
+	<fstream>
+	<sstream>
+
+1455407055 /home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment5Solution/include/Queue.h
+	<iostream>
+
+1455472573 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment5Solution/src/Queue.cpp
+	"Queue.h"
+	<iostream>
+	"Queue.h"
+

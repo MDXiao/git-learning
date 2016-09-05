@@ -1,0 +1,10 @@
+L,lolo,0
+L,popo,0
+W,cat
+W,hat
+W,mat
+W,hatter
+W,mad
+W,maddening
+W,catherine
+A,cath,catherine,1

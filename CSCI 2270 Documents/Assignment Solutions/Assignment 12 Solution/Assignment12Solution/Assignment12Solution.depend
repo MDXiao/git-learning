@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1460516478 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment12Solution/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<stdlib.h>
+	"HashTable.h"
+
+1460518783 /home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment12Solution/include/HashTable.h
+	<string>
+	<vector>
+
+1460574995 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment12Solution/src/HashTable.cpp
+	<iostream>
+	"HashTable.h"
+	<string.h>
+	<vector>
+

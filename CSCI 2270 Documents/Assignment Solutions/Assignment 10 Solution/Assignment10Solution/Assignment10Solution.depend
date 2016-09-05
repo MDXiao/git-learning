@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1459878488 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment10Solution/main.cpp
+	<iostream>
+	"Graph.h"
+	<fstream>
+	<string>
+	<stdlib.h>
+	<json/json.h>
+	<vector>
+	<sstream>
+
+1459878481 /home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment10Solution/include/Graph.h
+	<vector>
+	<iostream>
+
+1459878526 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment10Solution/src/Graph.cpp
+	"Graph.h"
+	<vector>
+	<iostream>
+	<queue>
+	<limits.h>
+	<algorithm>
+

@@ -1,0 +1,12 @@
+W,jelly
+W,jello
+W,just
+W,justin
+W,jejunum
+W,jellyfish
+L,jell,0
+L,jel,0
+L,jellyfish,1
+L,justtin,0
+L,jus,0
+L,justin,1

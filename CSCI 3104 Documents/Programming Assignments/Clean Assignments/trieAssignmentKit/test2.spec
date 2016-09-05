@@ -1,0 +1,14 @@
+W,hello
+W,how
+W,are
+W,you
+W,hell
+L,howdy,0
+W,howdy
+W,arid
+W,arachnid
+L,orange,0
+L,hello,1
+L,hell,1
+L,howdy,1
+A,ho,howdy,1,how,1

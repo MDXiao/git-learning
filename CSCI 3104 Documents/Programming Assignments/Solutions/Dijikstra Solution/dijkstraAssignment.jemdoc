@@ -1,0 +1,87 @@
+# jemdoc
+= Algorithms (CSCI 3104, Spring 2016)
+
+{{<font color="red"> Due Date: </font> }} Sunday, May 1, 2016.
+
+== Programming Assignment 3: Dijkstra Shortest Path
+
+{{<font color="red">}} Download the assignment Files: [http://www.cs.colorado.edu/~srirams/courses/csci3104-spr16/dijkstra-shortest-path.zip here]. {{</font>}} 
+
+=== Problem Statement
+
+The goal of this problem is to implement Dijkstra algorithm inside a
+graph data structure. The graph data structure is given in the file
+myGraph.py
+
+~~~
+{Code}{py}
+
+
+class MyGraph:
+'''
+     MyGraph has two members
+     self.n : number of vertices in the graph
+     self.adjList: Adjacency list stored as a list of lists.
+        self.adjList[i] stores all adjacent nodes to vertex ID i along with edge weights.
+     Eg., if vertex 2 has three outgoing edges
+                (2,3) with weight 4.5,
+                (2,4) with weight 3.2, and
+                (2,5) with weight 2.12
+        self.adjList[2] is the list [ (3,4.5), (4,3.2), (5,2.12) ]
+     The function addEdge provides you an idea of how self.adjList is constructed.
+    
+     your goal is to implement the singleSourceShortestPath function.
+    
+     read the rest of the code by downloading
+'''
+    
+~~~
+
+
+
+Your goal is to implement the ''singleSourceShortestPath'' method by
+implementing Dijkstra's algorithm. Assume all edgeweights are positive. For your
+convenience, we have provided a priority queue data structure in
+''priorityQueue.py'' that implements the functions you will need to
+implement the algorithm. Feel free to reprogram this code if you wish.
+
+~~~
+{Code}{py}
+
+class PriorityQueue:
+    ''' 
+      A very naive implementation of a priority queue using a dictionary
+      pq.Inf refers to  the value INFINITY
+      pq.n : number of vertices
+      pq.d : the actual map from vertex ids to distance estimates
+      
+      Methods.
+        pq.set(i,dist): set node i value to dist
+        pq.hasKey(i): does node i exist in pq
+        pq.get(i): get the value associated with node i
+        pq.extractMin(): extract the minimum value and remove it from the queue
+        pq.isEmpty(): is the priority queue empty?
+    '''
+
+~~~
+
+You are also provided the basic setup code for Dijkstra which you may reprogram.
+
+=== Testing Your Implementation
+
+To test your code you can directly run myGraph.py. It runs two simple tests.
+
+~~~
+{Code}{py}
+
+commandPrompt> python3 myGraph.py 
+
+commandPrompt> python3 testShortestPath test1
+commandPrompt> python3 testShortestPath test2
+commandPrompt> python3 testShortestPath test3
+...
+commandPrompt> python3 testShortestPath test10
+~~~
+
+If any of the tests fail, you should check/debug your code.
+

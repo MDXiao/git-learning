@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style>
+
+table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: white;
+}
+
+body {
+	background: white;
+	font-family: Georgia, serif;
+	padding-bottom: 8px;
+	margin: 0;
+}
+
+#layout-menu {
+	background: #f6f6f6;
+	border: 1px solid #dddddd;
+	padding-top: 0.5em;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 1.0em;
+	width: auto;
+	white-space: nowrap;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu td {
+	background: #f4f4f4;
+    vertical-align: top;
+}
+
+#layout-content {
+	padding-top: 0.0em;
+	padding-left: 1.0em;
+	padding-right: 1.0em;
+    border: none;
+    background: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+#layout-menu a {
+	line-height: 1.5em;
+	margin-left: 0.5em;
+}
+
+tt {
+    background: #ffffdd;
+}
+
+pre, tt {
+	font-size: 90%;
+	font-family: monaco, monospace;
+}
+
+a, a > tt {
+	color: #224b8d;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px gray dotted;
+}
+
+#layout-menu a.current:link, #layout-menu a.current:visited {
+	color: #022b6d;
+	border-bottom: 1px gray solid;
+}
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+	color: #527bbd;
+	text-decoration: none;
+}
+#layout-menu a:hover {
+	text-decoration: none;
+}
+
+div.menu-category {
+	border-bottom: 1px solid gray;
+	margin-top: 0.8em;
+	padding-top: 0.2em;
+	padding-bottom: 0.1em;
+	font-weight: bold;
+}
+
+div.menu-item {
+	padding-left: 16px;
+	text-indent: -16px;
+}
+
+div#toptitle {
+	padding-bottom: 0.2em;
+	margin-bottom: 1.5em;
+	border-bottom: 3px double gray;
+}
+
+/* Reduce space if we begin the page with a title. */
+div#toptitle + h2, div#toptitle + h3 {
+	margin-top: -0.7em;
+}
+
+div#subtitle {
+	margin-top: 0.0em;
+	margin-bottom: 0.0em;
+	padding-top: 0em;
+	padding-bottom: 0.1em;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+h1, h2, h3 {
+	color: #527bbd;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+	font-size: 165%;
+}
+
+h2 {
+	padding-top: 0.8em;
+	font-size: 125%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+p {
+	margin-top: 0.0em;
+	margin-bottom: 0.8em;
+	padding: 0;
+	line-height: 1.3;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+}
+
+div#footer {
+	font-size: small;
+	border-top: 1px solid #c0c0c0;
+	padding-top: 0.1em;
+	margin-top: 4.0em;
+	color: #c0c0c0;
+}
+
+div#footer a {
+	color: #80a0b0;
+}
+
+div#footer-text {
+	float: left;
+	padding-bottom: 8px;
+}
+
+ul, ol, dl {
+	margin-top: 0.2em;
+	padding-top: 0;
+	margin-bottom: 0.8em;
+}
+
+dt {
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+dl {
+	margin-left: 20px;
+}
+
+dd {
+	color: #222222;
+}
+
+dd > *:first-child {
+	margin-top: 0;
+}
+
+ul {
+	list-style-position: outside;
+	list-style-type: square;
+}
+
+p + ul, p + ol {
+	margin-top: -0.5em;
+}
+
+li ul, li ol {
+	margin-top: -0.3em;
+}
+
+ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+}
+
+li p, dd p {
+	margin-bottom: 0.3em;
+}
+
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+ol ol ol {
+	list-style-type: lower-roman;
+}
+
+p + div.codeblock {
+	margin-top: -0.6em;
+}
+
+div.codeblock, div.infoblock {
+	margin-right: 10%;
+	margin-top: 1.2em;
+	margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+	font-weight: bold;
+	color: #cd7b62;
+	margin-top: 1.2em;
+	margin-bottom: 0.1em;
+}
+
+div.blockcontent {
+	border: 1px solid silver;
+	padding: 0.3em 0.5em;
+}
+
+div.infoblock > div.blockcontent {
+	background: #ffffee;
+}
+
+div.blockcontent p + ul, div.blockcontent p + ol {
+	margin-top: 0.4em;
+}
+
+div.infoblock p {
+	margin-bottom: 0em;
+}
+
+div.infoblock li p, div.infoblock dd p {
+	margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+	margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+	background: #f6f6f6;
+}
+
+span.pycommand {
+	color: #000070;
+}
+
+span.statement {
+	color: #008800;
+}
+span.builtin {
+	color: #000088;
+}
+span.special {
+	color: #990000;
+}
+span.operator {
+	color: #880000;
+}
+span.error {
+	color: #aa0000;
+}
+span.comment, span.comment > *, span.string, span.string > * {
+	color: #606060;
+}
+
+@media print {
+	#layout-menu { display: none; }
+}
+
+#fwtitle {
+	margin: 2px;
+}
+
+#fwtitle #toptitle {
+	padding-left: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
+	margin-top: -0.7em;
+}
+
+div#toptitle h1, #layout-content div#toptitle h1 {
+	margin-bottom: 0.0em;
+	padding-bottom: 0.1em;
+	padding-top: 0;
+	margin-top: 0.5em;
+	border-bottom: none;
+}
+
+img.eq {
+	padding: 0;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+	margin: 0;
+}
+
+img.eqwl {
+	padding-left: 2em;
+	padding-top: 0.6em;
+	padding-bottom: 0.2em;
+	margin: 0;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+table + table {
+    margin-top: 1em;
+}
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+#lectureSchedule tr.r1 { font-weight: bold; }
+#lectureSchedule td.c1 { background: #f6f6f6; }
+#defaultTable tr.r1 {font-weight: bold;}
+</style>
+<title>Algorithms (CSCI 3104, Spring 2016)</title>
+</head>
+<body>
+<div id="layout-content">
+<div id="toptitle">
+<h1>Algorithms (CSCI 3104, Spring 2016)</h1>
+</div>
+<p><font color="red"> Due Date: </font>  Sunday, May 1, 2016.</p>
+<h2>Programming Assignment 3: Dijkstra Shortest Path</h2>
+<p><font color="red"> Download the assignment Files: <a href="http://www.cs.colorado.edu/~srirams/courses/csci3104-spr16/dijkstra-shortest-path.zip">here</a>. </font> </p>
+<h3>Problem Statement</h3>
+<p>The goal of this problem is to implement Dijkstra algorithm inside a
+graph data structure. The graph data structure is given in the file
+myGraph.py</p>
+<div class="codeblock">
+<div class="blocktitle">Code</div>
+<div class="blockcontent"><pre>
+
+
+<span class="statement">class</span> MyGraph:
+<span class="string">''</span>'
+     MyGraph has two members
+     self.n : number of vertices <span class="builtin">in</span> the graph
+     self.adjList: Adjacency list stored <span class="statement">as</span> a list of lists.
+        self.adjList[i] stores all adjacent nodes to vertex ID i along <span class="statement">with</span> edge weights.
+     Eg., <span class="statement">if</span> vertex 2 has three outgoing edges
+                (2,3) <span class="statement">with</span> weight 4.5,
+                (2,4) <span class="statement">with</span> weight 3.2, <span class="builtin">and</span>
+                (2,5) <span class="statement">with</span> weight 2.12
+        self.adjList[2] <span class="builtin">is</span> the list [ (3,4.5), (4,3.2), (5,2.12) ]
+     The function addEdge provides you an idea of how self.adjList <span class="builtin">is</span> constructed.
+
+     your goal <span class="builtin">is</span> to implement the singleSourceShortestPath function.
+
+     read the rest of the code by downloading
+<span class="string">''</span>'
+
+</pre></div></div>
+<p>Your goal is to implement the &rsquo;'singleSourceShortestPath&rsquo;&rsquo; method by
+implementing Dijkstra's algorithm. Assume all edgeweights are positive. For your
+convenience, we have provided a priority queue data structure in
+&rsquo;'priorityQueue.py&rsquo;&rsquo; that implements the functions you will need to
+implement the algorithm. Feel free to reprogram this code if you wish.</p>
+<div class="codeblock">
+<div class="blocktitle">Code</div>
+<div class="blockcontent"><pre>
+
+<span class="statement">class</span> PriorityQueue:
+    <span class="string">''</span>'
+      A very naive implementation of a priority queue using a dictionary
+      pq.Inf refers to  the <span class="special">value</span> INFINITY
+      pq.n : number of vertices
+      pq.d : the actual map <span class="statement">from</span> vertex ids to distance estimates
+
+      Methods.
+        pq.<span class="builtin">set</span>(i,dist): <span class="builtin">set</span> node i <span class="special">value</span> to dist
+        pq.hasKey(i): does node i exist <span class="builtin">in</span> pq
+        pq.get(i): get the <span class="special">value</span> associated <span class="statement">with</span> node i
+        pq.extractMin(): extract the minimum <span class="special">value</span> <span class="builtin">and</span> remove it <span class="statement">from</span> the queue
+        pq.isEmpty(): <span class="builtin">is</span> the priority queue empty?
+    <span class="string">''</span>'
+
+</pre></div></div>
+<p>You are also provided the basic setup code for Dijkstra which you may reprogram.</p>
+<h3>Testing Your Implementation</h3>
+<p>To test your code you can directly run myGraph.py. It runs two simple tests.</p>
+<div class="codeblock">
+<div class="blocktitle">Code</div>
+<div class="blockcontent"><pre>
+
+commandPrompt&gt; python3 myGraph.py
+
+commandPrompt&gt; python3 testShortestPath test1
+commandPrompt&gt; python3 testShortestPath test2
+commandPrompt&gt; python3 testShortestPath test3
+...
+commandPrompt&gt; python3 testShortestPath test10
+</pre></div></div>
+<p>If any of the tests fail, you should check/debug your code.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2016-04-15 18:26:11 MDT, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</div>
+</body>
+</html>

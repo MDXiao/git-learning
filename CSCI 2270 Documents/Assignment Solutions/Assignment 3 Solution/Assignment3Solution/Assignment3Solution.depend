@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1422907769 source:/home/user/Dropbox/CSCI2270/Spring2015/Assignment3Solution/main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
+1454268840 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment3Solution/main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	"CommunicationNetwork.h"
+
+1454268510 /home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment3Solution/include/CommunicationNetwork.h
+	<iostream>
+
+1454269903 source:/home/user/Dropbox/CSCI2270/Spring2016/Assignments/Assignment3Solution/src/CommunicationNetwork.cpp
+	"CommunicationNetwork.h"
+	<iostream>
+	<fstream>
+
