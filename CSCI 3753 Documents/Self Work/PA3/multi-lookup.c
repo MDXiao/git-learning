@@ -97,7 +97,7 @@ void* Resolver()
 		pthread_mutex_lock(&condLock);
 		while (queue_is_empty(q))
 		{
-			pthread_cond_wait(&condRes, &queueLock);
+			pthread_cond_wait(&condRes, &condLock);
 			if(SearchComplete)
 			{
 				pthread_mutex_lock(&outLock);
