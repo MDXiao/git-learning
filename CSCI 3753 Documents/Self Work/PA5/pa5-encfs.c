@@ -598,12 +598,14 @@ int main(int argc, char *argv[])
 	{
 		fprintf(stderr, "INPUT ERROR: Not enough arguments.\n");		
 		fprintf(stderr,"Usage: ./pa5-encfs <Key Phrase> <Mirror Directory> <Mount Point>\n");
+		fprintf(stderr,"Usage 2 (foreground): ./pa5-encfs <Key Phrase> <Mirror Directory> <Mount Point> -f \n");
 		return EXIT_FAILURE;
 	}
 	if(argc > 4)
 	{
 		fprintf(stderr, "INPUT ERROR: Too many arguments.\n");
 		fprintf(stderr, "Usage: ./pa5-encfs <Key Phrase> <Mirror Directory> <Mount Point>\n");
+		fprintf(stderr,"Usage 2 (foreground): ./pa5-encfs <Key Phrase> <Mirror Directory> <Mount Point> -f \n");
 		return EXIT_FAILURE;
 	}
 	
