@@ -393,7 +393,7 @@ static int xmp_write(const char *old_path, const char *buf, size_t size,
 		inFile = fopen(path, "r+");	
 		fseek(inFile, 0, SEEK_SET);
 		
-		do_crypt(inFile, temp, 0, NEW_DATA->encrypt_key);
+		do_crypt(inFile, temp, 0, NEW_DATA->encrypt_key); //Only fails when "echo 2 > 2.txt" since 2.txt doesn't exist yet
 		
 		/*
 		Once the file is decrypted, go again back to the beginning with fseek
