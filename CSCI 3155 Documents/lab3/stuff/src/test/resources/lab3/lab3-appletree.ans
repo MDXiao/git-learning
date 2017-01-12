@@ -1,0 +1,10 @@
+# Evaluating ...
+3
+# Stepping ...
+##    0: ConstDecl(x,N(1.0),ConstDecl(g,Function(None,y,Var(x)),ConstDecl(h,Function(None,x,Call(Var(g),N(2.0))),Call(Var(h),N(3.0)))))
+##    1: ConstDecl(g,Function(None,y,N(1.0)),ConstDecl(h,Function(None,x,Call(Var(g),N(2.0))),Call(Var(h),N(3.0))))
+##    2: ConstDecl(h,Function(None,x,Call(Function(None,y,N(1.0)),N(2.0))),Call(Var(h),N(3.0)))
+##    3: Call(Function(None,x,Call(Function(None,y,N(1.0)),N(2.0))),N(3.0))
+##    4: Call(Function(None,y,N(1.0)),N(2.0))
+##    5: N(1.0)
+1

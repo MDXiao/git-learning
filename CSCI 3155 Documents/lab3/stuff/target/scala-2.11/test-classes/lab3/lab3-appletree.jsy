@@ -1,0 +1,4 @@
+const x = 1
+const g = (y) => x
+const h = (x) => g(2)
+h(3)
