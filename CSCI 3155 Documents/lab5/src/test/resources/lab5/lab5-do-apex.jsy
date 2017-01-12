@@ -1,0 +1,5 @@
+const x = 5;
+name  y = x + 100;
+const f = function(n: var number): number {n===0 ? 1: n*f(n-1)};
+f(5);
+x = 1 + f(5);

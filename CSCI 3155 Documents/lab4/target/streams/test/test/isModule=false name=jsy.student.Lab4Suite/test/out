@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mLab4Suite:[0m[0m
+[0m[[0minfo[0m] [0m[31mjsy.student.Lab4JsyTests *** ABORTED *** (2 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.OutOfMemoryError: Java heap space[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31mjsy.student.Lab4Suite *** ABORTED *** (1 millisecond)[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.OutOfMemoryError: Java heap space[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m

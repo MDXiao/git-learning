@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0m[32mLab4SpecRunner:[0m[0m
+[0m[[0minfo[0m] [0m[32mcompressRec/compressFold[0m[0m
+[0m[[0minfo[0m] [0m[32m- should compress List(1, 2, 2, 3, 3, 3) (17 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32mmapFirst[0m[0m
+[0m[[0minfo[0m] [0m[32m- should map the first element where f returns Some (1 millisecond)[0m[0m
+[0m[[0minfo[0m] [0m[32mfoldLeft[0m[0m
+[0m[[0minfo[0m] [0m[32m- should enable implementing treeFromList and sum (4 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32mstrictlyOrdered[0m[0m
+[0m[[0minfo[0m] [0m[32m- should check strict ordering of a binary search tree (5 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32mTypeVar[0m[0m
+[0m[[0minfo[0m] [0m[32m- should perform TypeVar (0 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32mstep[0m[0m
+[0m[[0minfo[0m] [0m[32m- should evaluate function ID test (16 milliseconds)[0m[0m

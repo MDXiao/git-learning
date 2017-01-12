@@ -1,0 +1,11 @@
+[0m[[0minfo[0m] [0m[32mLab4JsyTests:[0m[0m
+[0m[[0minfo[0m] [0m[32meval on src/test/resources/lab4/test4001_id.jsy[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match src/test/resources/lab4/test4001_id.ans (1 millisecond)[0m[0m
+[0m[[0minfo[0m] [0m[32meval on src/test/resources/lab4/test4002_multiparamfun.jsy[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match src/test/resources/lab4/test4002_multiparamfun.ans (1 millisecond)[0m[0m
+[0m[[0minfo[0m] [0m[32meval on src/test/resources/lab4/test4007_objliteral.jsy[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match src/test/resources/lab4/test4007_objliteral.ans (1 millisecond)[0m[0m
+[0m[[0minfo[0m] [0m[32meval on src/test/resources/lab4/test4010_deref.jsy[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match src/test/resources/lab4/test4010_deref.ans (0 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32meval on src/test/resources/lab4/test4029_simplerec.jsy[0m[0m
+[0m[[0minfo[0m] [0m[32m- should match src/test/resources/lab4/test4029_simplerec.ans (0 milliseconds)[0m[0m
