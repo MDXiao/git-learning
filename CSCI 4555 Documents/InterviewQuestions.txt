@@ -1,0 +1,167 @@
+
+1. Compile the program
+
+x = input()
+print - x + 3
+Explain how the output assembly corresponds to the input (e.g., which instructions correspond to which P0 expressions/statements).
+
+2. What is the difference between the concrete syntax and the abstract syntax of a programming language? Why do we consider this distinction? How do we go between these two forms?
+
+3. Give an example of two distinct terms (or trees) in P0's abstract syntax that corresponds to the same string in P0's concrete syntax.
+
+4. Describe the flatten module. What are inputs and outputs? How do you know that you've covered all cases?
+
+
+Homework 2
+
+1. Run your parser on the program
+
+print 1 + 2 + 3
+Explain how the AST corresponds to the input.
+
+2. Consider the grammar
+
+statements ::= e | statement statements
+statement ::= name "=" expression | expression
+expression ::= integer | "-" expression | expression "-" integer
+Is this grammar ambiguous? If so, demonstrate it with two parse trees for the same string.
+
+3. Modify your P0 parser replacing the rule
+
+'expression : expression PLUS expression'
+with
+
+'expression : expression MINUS INTEGER'
+Generate a new parsing table and explain the new shift/reduce conflicts. Which shift/reduce conflict corresponds to the ambiguity with
+
+x = 1 - 3
+and how should we resolve the shift/reduce conflict to make the above 1 statement.
+
+4. Descibe the parser module. What are inputs and outputs? How do you know that you've covered all cases?
+
+
+Homework 3
+
+1. Compile the program
+
+x = input()
+print - x + 3
+Explain how the output assembly corresponds to the input (e.g., which instructions correspond to which P0 expressions/statements). What is the assignment of variables to registers? 
+
+2. Explain why we do not construct the interference graph by adding an interference edge between all pairs of variables that are live at the same time.
+
+3. Define a "live variable". Why is liveness analysis computed "backwards"?
+
+4. Describe the graph coloring module. What are inputs and outputs? How do you know that you've covered all cases? Explain the complexity of the algorithm (it should be O(n log n) where n is the number of variables).
+
+5. Suppose we extend x86ish with "if statements":
+
+instrs ::= instr instrs
+instr ::= ... | if x instrs1 else instrs2
+Let us define computing a live-before set given an instruction and a live-after set and similarly for a sequence of instructions.
+
+
+Lbefore(instr, Lafter) =def= ...
+Lbefore(instrs, Lafter) =def= ...
+For example,
+
+Lbefore(movl x,y, Lafter) =def= (Lafter - {y}) ? {x}
+Define Lbefore for the if statement.
+
+
+Homework 4
+
+1. Compile the program
+
+x = input()
+x + 42
+Identify the instruction that first instance of the getting tag of x (the value read from input()). Identify where there are branches based on the tag of x and the blocks that correspond to do integer addition (after ProjectTo).
+
+2. Explain why we leave in structured if statements for register allocation instead of translating to unstructured control flow in instruction selection. Note that this choice splits the task of translating to x86 in two places.
+
+3. Why are our P1 integers 30-bits? Why is boxing of integers and booleans inefficient? Why do we need run-time tags?
+
+4. Describe the explicate module. What are inputs and outputs? How do you know that you've covered all cases?
+
+5. We show that a typing judgment holds by assembling instances of rules into a tree called a derivation. Show that following typing judgment holds.
+
+x:pyobj |- Add(Const(1), ProjectTo(int, x)) : int
+Prompt:
+
+---------------------------------------------------------------------
+x:pyobj |- Add(Const(1), ProjectTo(int, Name('x')) : int
+
+
+Homework 5
+
+1. Compile the program
+
+(lambda x: x)(5)
+Walk through and explain the origin of each instruction block.
+
+2. Perform heapification and closure conversion (by hand) on the following:
+
+x = 1
+def f(y):
+  return lambda z: x + y + z
+g = f(2)
+print g(3)
+3. What particular aspect of P2 (and Python semantics) requires creating closures to implement first-class functions?
+
+4. Describe the heapify module. What are the inputs and outputs? How do you know that you've covered all cases?
+
+5. Consider the following program fragment
+
+
+def f(x):
+  return lambda: ...
+x = 1
+g = ...
+print g()
+Complete the fragment to show a difference in the printed value under static scoping versus dynamic scoping. Explain.
+
+ 
+
+Homework 6
+
+ 
+
+Compile and run the following program:
+class C:
+    x = 1
+print C.x
+Walk through and explain the origin of each instruction block.
+
+ 
+
+Perform declassification (by hand) on the following:
+x = 0
+class C:
+  x = x + 1
+  def m(self):
+    return x + self.x
+o = C()
+m = o.m
+print o.m()
+For simplicity, you may leave out branches if expressions at call sites based on your knowledge of the type of the value in the function position.
+
+ 
+
+List the four ways a call site can be polymorphic (excluding input()) and state the type of value being called.
+ 
+
+Code review your declassify module. What are the inputs and outputs? Why do you have confidence that you've covered all cases?
+ 
+
+Consider the following program fragment
+
+x = 0
+class C:
+  x = 1
+  class D:
+    x = 2
+    y = x
+  y = x + D.x
+  x = y + 1
+  print D.x
+Suppose variables in class bodies follow the same static scoping rules as function bodies. Describe a declassify procedure to implement this semantics and declassify this example using your procedure (this procedure should be simpler than our "real" declassify).

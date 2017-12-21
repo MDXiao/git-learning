@@ -1,0 +1,8 @@
+README
+
+To run the client: 
+	Type 'make', then './dfc dfc.conf' to run the client
+To run the server:
+	Type 'make', then './dfs DIRECTORY PORTNUMBER' to start a df server
+
+Make sure to run the server before running a client, or nothing will work. 
